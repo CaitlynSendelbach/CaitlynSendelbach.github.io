@@ -1,0 +1,280 @@
+@import url('../images/background.jpg');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* * {box-sizing: border-box} */
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.container{
+  box-shadow: -2px 0px 27px rgba(0,0,0,0.75);
+  margin: 2rem auto;
+  max-width: 90%;
+  width: 1200px;
+  background: lightblue;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+#logo{
+  font-family: 'Playfair Display', serif;
+  margin-left: 1rem;
+}
+.topNav{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 4rem;
+}
+.topNav ul{
+  font-family: 'Asap+Condensed', sans-serif;
+  display: flex;
+  float: right;
+}
+.topNav ul li{
+  list-style-type: none;
+  margin-left: 2rem;
+}
+
+.hero{
+  align-items: center;
+  background-image:
+  url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  height: 70vh;
+  background-position: center;
+  display: flex;  
+  flex-direction: column; 
+  font-family: 'Asap+Condensed', sans-serif;
+  color: white;
+  opacity: 0.85;
+  filter: alpha(opacity=80);
+  text-shadow: 2px 2px black;
+
+}
+.headshot{
+  height: 200px;
+  width: 150px;
+  border: solid;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectContent{
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttonProjects{
+  margin: 3rem;
+}
+
+.content img {
+  border-radius: 8px;
+}
+.languages{
+  color: black;
+}
+.languages h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.languages ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.info h3{
+  display: flex;
+  justify-content: center;
+}
+.info ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.info ul li img {
+  border-style: double;
+  height: 200px;
+  width: 300px;
+}
+.hyper a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fa {
+  padding: 15px;
+  height: 10px;
+  font-size: 20px;
+  width: 10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa-github {
+  background: #000;
+  color: #FFF;
+}
+.fa-google {
+  background: #DB4437;
+  color: #FFF;
+}
+.fa-linkedin {
+  background: #0077B5;
+    color: #FFF;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #000;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hideNav{
+  display: none;
+}
+
+.hide{
+  display: none;
+}
+
+.hideAmok{
+  display: none;
+}
+
+.hideShelter{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
