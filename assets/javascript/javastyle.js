@@ -14,12 +14,9 @@ const shelterButton = document.querySelector('#toggleShelter');
 const content = document.querySelector('.hide');
 const contentShelter = document.querySelector('.hideShelter');
 const contentAmok = document.querySelector('.hideAmok');
-const navButton = document.querySelector('#navButton');
-const navContent = document.querySelector('.hideNav');
 
-navButton.addEventListener('click', function(){
-    navContent.classList.toggle('show');
-});
+
+
 
 button.addEventListener('click', function(){
   content.classList.toggle('show');
